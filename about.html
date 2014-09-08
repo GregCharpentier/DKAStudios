@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="shortcut icon" href="resources/thumb.png">
+    	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DKA Studios</title>
+    </head>
+    <header>
+        <div id = "toolbar">
+            <ul>
+        	    <a href = "index.html"><li>HOME</li></a>
+        	    <a href = "games.html"><li>GAMES</li></a>
+        	    <a id = "currentpage" href = "about.html"><li>ABOUT</li></a>
+        	    <a href = "contact.html"><li>CONTACT</li></a>
+                <a href = "forms.html"><li>SURVEY</li></a>
+            </ul>
+        </div>
+        <div id = "headerimage">
+            <img src = "resources/dkalogohorizontal.png"/>
+		</div>
+    </header>
+    <body>
+        <style type="text/css">
+            @font-face {
+                font-family: "My Custom Font";
+                src: url(http://www.example.org/mycustomfont.ttf) format("truetype");}
+                p.customfont { font-family: "My Custom Font", Verdana, Tahoma;}
+        </style>
+        <div class="topwrapper">
+            <div class="bottomwrapper">
+                <div class="content center">
+                    <div class="topwrapper">
+                        <div class="bottomwrapper">
+                            <div class="article">   
+                                <p>DKA Studios is an independent game studio located in the metro Atlanta area comprised of three high school seniors with a passion for making quality games.<br></p>
+        	                    <h2 id = "BassHeader">HOUSTON BASS</h2>
+        	                    <p  id = "BassParagraph">Wants to major in Minecraft Engineering. Seriously.<br></p>
+        	                    <h2 id = "JPHeader">JP TYNDALL</h2>
+        	                    <p id = "JPParagraph" >Professional TF2 player. Once held his own against 6 bat scouts and 12 demo knights.<br></p>
+        	                    <h2 id = "GregHeader">GREG CHARPENTIER</h2>
+        	                    <p id = "GregParagraph">"Greg doesn't talk."</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+        	$("#BassHeader").click(expandBass);
+        	$("#JPHeader").click(expandJP);
+        	$("#GregHeader").click(expandGreg);
+			var BassDown = false;
+			var JPDown = false;
+			var GregDown = false;
+			$('#BassParagraph').slideUp(0);
+			$('#JPParagraph').slideUp(0);
+			$('#GregParagraph').slideUp(0);
+        	function expandBass()
+        	{
+        		if(BassDown)
+        		{
+        			$('#BassParagraph').slideUp('slow');
+        			BassDown = false;
+        		}
+        		else
+        		{
+        			$('#BassParagraph').slideDown('slow');
+        			BassDown = true;
+        		}
+
+        	}
+
+        	function expandJP()
+        	{
+        		if(JPDown)
+        		{
+        			$('#JPParagraph').slideUp('slow');
+        			JPDown = false;
+        		}
+        		else
+        		{
+        			$('#JPParagraph').slideDown('slow');
+        			JPDown = true;
+        		}
+        	}
+
+        	function expandGreg()
+        	{
+        		if(GregDown)
+        		{
+        			$('#GregParagraph').slideUp('slow');
+        			GregDown = false;
+        		}
+        		else
+        		{
+        			$('#GregParagraph').slideDown('slow');
+        			GregDown = true;
+        		}
+        	}
+        </script>
+    </body>
+
+    <footer class="center">
+        Copyright © 2013 DKA Studios. All rights reserved.
+    </footer>
+
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="shortcut icon" href="resources/fatcat1.jpg">
+    	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <title>DKA Studios</title>
+    </head>
+    <header>
+        <div id = "toolbar">
+            <ul>
+        	    <a href = "index.html"><li>HOME</li></a>
+        	    <a href = "games.html"><li>GAMES</li></a>
+        	    <a href = "about.html"><li>ABOUT</li></a>
+        	    <a href = "contact.html"><li>CONTACT</li></a>
+                <a id = "currentpage" href = "forms.html"><li>SURVEY</li></a>
+            </ul>
+        </div>
+        <div id = "headerimage">
+            <img src = "resources/dkalogohorizontal.png"/>
+		</div>
+    </header>
+
+    <body>
+        <div class="topwrapper">
+            <div class="bottomwrapper">
+                <div class="content center">
+                    <div class="topwrapper">
+                        <div class="bottomwrapper">
+                            <div class="center">
+                                Please complete this short survey to help improve our customer experience.<br><br>
+                                <form>
+                                    Name:<input type = "q"></input><br>
+                                    Gender:<input type="radio" name="gender" value="male"> Male
+                                    <input type="radio" name="gender" value="female"> Female<br><br>
+                                    How would you rate the DKA website?<br>
+                                    <input type = "range" value = "rating"><br><br>
+                                    How would you rate the DKA customer experience as a whole?<br>
+                                    <input type = "range" value = "rating"><br><br>
+                                    Have you experienced the Taco Bell™ Doritos™ Locos Tacos™ Supreme™ taco?<br>
+                                    <input type="radio" name="taco" value="male"> Yes<input type="radio" name="taco" value="female"> No<br><br>
+                                    If so, please upload an image of your Taco Bell™ Doritos™ Locos Tacos™ Supreme™ taco.<br>
+                                    <input type="file" name="img"><br><br>
+
+                                    If not, please select all of the following that you have experienced.<br>
+                                    <input type="checkbox" name="taco" value="TacoBell">Taco Bell™
+                                    <input type="checkbox" name="taco" value="Doritos">Doritos™
+                                    <input type="checkbox" name="taco" value="LocosTacos">Locos Tacos™
+                                    <input type="checkbox" name="taco" value="Supreme">Supreme™
+                                    <input type="checkbox" name="taco" value="Taco">Taco<br><br>
+                                    Who is your favorite DKA employee?
+                                    <select>
+                                        <option value="None" selected="selected">Select an option</option>
+                                        <option value="Greg">Greg</option>
+                                        <option value="Houston">Houston</option>
+                                        <option value="JP">JP</option>
+                                    </select>
+                                    <br><br>
+                                    (Never give anyone your password)<br>
+                                    Enter your password:<input type = "password"></input><br><br>
+
+                                    Add any other comments you have here.<br>
+                                    <textarea rows="4" cols="50"></textarea><br><br>
+                                    <input type="submit" value="Submit"><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer class="center">
+        Copyright © 2013 DKA Studios. All rights reserved.
+    </footer>
+
+</html>
+
